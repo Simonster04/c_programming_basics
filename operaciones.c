@@ -1,3 +1,7 @@
+/*Usar este comando para compilar (lo requiere la librería math.h):
+	gcc -o operaciones operaciones.c -lm
+*/
+
 #include <stdio.h>
 #include <math.h>
 
