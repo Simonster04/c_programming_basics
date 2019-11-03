@@ -5,7 +5,8 @@
 int main()
 {
 
-	int n, i, x, sum = 0;
+	int n, i, x;
+	float sum = 0; /*De tipo float porque será un valor muy grande y para mostrar decimales en la media*/
 
 	printf("\n¿Cuántos números desea ingresar para calcular la media?: ");
 	scanf("%d", &n);
@@ -17,17 +18,17 @@ int main()
 		sum += x;
 	}
 
-	printf("\nLa media aritmética de los números ingresados es: [%d]\n\n", (sum / n));
+	printf("\nLa media aritmética de los números ingresados es: [%f]\n\n", (sum / n));
 
 /*Ejercicio 2: Imprimir la suma de todos los números pares de 2 a 1000*/
 
-	y = 0;
+	sum = 0;
 	for (i = 2; i <= 1000; i++)
 	{
 		sum += i;
 	}
 
-	printf("\nLa suma de todoslos números de 2 a 1000 es: [%d]\n\n", sum);
+	printf("\nLa suma de todoslos números de 2 a 1000 es: [%f]\n\n", sum);
 
 	return (0);
 }
